@@ -5,7 +5,7 @@ const apiRoutes = require("./routes/apiRoute");
 const htmlRoutes = require("./routes/htmlRoutes");
 
 const app = express();
-const PORT = 3000;
+const PORT = 4000;
 
 // Data
 // ===========================================================
