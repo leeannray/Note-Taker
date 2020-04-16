@@ -27,7 +27,7 @@ var saveNote = function (note) {
 // A function for deleting a note from the db
 var deleteNote = function (id) {
   return $.ajax({
-    url: "api/notes/" + id,
+    url: "/api/notes/" + id,
     method: "DELETE",
   });
 };
@@ -49,7 +49,7 @@ var renderActiveNote = function () {
   }
 };
 
-// Get the note data from the inputs, save it to the db and update the view
+// Get note data from inputs, save it to db and update saved notes area
 var handleNoteSave = function () {
   var newNote = {
     title: $noteTitle.val(),
@@ -62,7 +62,7 @@ var handleNoteSave = function () {
   });
 };
 
-// Delete the clicked note
+// Delete clicked note
 var handleNoteDelete = function (event) {
   // prevents the click listener for the list from being called when the button inside of it is clicked
   event.stopPropagation();
@@ -79,20 +79,19 @@ var handleNoteDelete = function (event) {
   });
 };
 
-// Sets the activeNote and displays it
+// Sets activeNote and displays it
 var handleNoteView = function () {
   activeNote = $(this).data();
   renderActiveNote();
 };
 
-// Sets the activeNote to and empty object and allows the user to enter a new note
+// Clears and creates empty object to allow user to enter new note
 var handleNewNoteView = function () {
   activeNote = {};
   renderActiveNote();
 };
 
-// If a note's title or text are empty, hide the save button
-// Or else show it
+// If either note's title or text are empty, hide save button or else show it
 var handleRenderSaveBtn = function () {
   if (!$noteTitle.val().trim() || !$noteText.val().trim()) {
     $saveNoteBtn.hide();
@@ -101,7 +100,7 @@ var handleRenderSaveBtn = function () {
   }
 };
 
-// Render's the list of note titles
+// Renders note titles
 var renderNoteList = function (notes) {
   $noteList.empty();
 
@@ -123,7 +122,7 @@ var renderNoteList = function (notes) {
   $noteList.append(noteListItems);
 };
 
-// Gets notes from the db and renders them to the sidebar
+// Gets notes from db and displays them on sidebar
 var getAndRenderNotes = function () {
   return getNotes().then(function (data) {
     renderNoteList(data);

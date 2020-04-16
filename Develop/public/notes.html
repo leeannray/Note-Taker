@@ -8,36 +8,37 @@
   <title>Note Taker</title>
   <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/sketchy/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-2kOE+STGAkgemIkUbGtoZ8dJLqfvJ/xzRnimSkQN7viOfwRvWseF7lqcuNXmjwrL" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-light bg-light">
     <a class="navbar-brand" href="/index.html">NOTED
     </a>
     <div class="icons">
-      <i class="far fa-save text-light save-note"></i>
-      <i class="fas fa-pen-fancy text-light new-note"></i>
+      <i class="fas fa-save text-dark save-note"></i>
+      <i class="fas fa-pen-fancy text-dark new-note"></i>
     </div>
   </nav>
   <div class="container-fluid">
     <div class="row">
       <div class="col-4 list-container">
-        <div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+        <div class="card">
           <ul class="list-group">
           </ul>
         </div>
       </div>
       <div class="col-8">
-        <input class="note-title" placeholder="TITLE" maxlength="28" type="text">
-        <textarea class="note-textarea" placeholder="TEXT"></textarea>
+        <input class="note-title" placeholder="Note Title" maxlength="28" type="text" style="padding: 20px 20px; margin: 20px 20px">
+        <br>
+        <textarea class="note-textarea" style="padding: 20px 20px; margin: 20px 20px" placeholder="Note Text"></textarea>
       </div>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="/assets/js/index.js"></script>
+<script src="/assets/js/index.js"></script>
 </body>
 
 </html>

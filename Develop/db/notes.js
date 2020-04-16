@@ -2,7 +2,7 @@ const util = require("util");
 const fs = require("fs");
 
 // This package will be used to generate our unique ids. https://www.npmjs.com/package/uuid
-const uuidv1 = require("uuidv1");
+
 
 const readFileAsync = util.promisify(fs.readFile);
 const writeFileAsync = util.promisify(fs.writeFile);
@@ -24,7 +24,7 @@ class NotesData {
     return this.read().then(notes => {
       let parsedNotes;
 
-      // If notes not an array or cannot be turned into one, send back a new empty array
+      // If notes not an array or cannot be turned into one, send new empty array
       try {
         parsedNotes = [].concat(JSON.parse(notes));
       } catch (err) {
@@ -35,7 +35,7 @@ class NotesData {
     });
   }
 
-  saveNote(note) {
+  addNote(note) {
     const { title, text } = note;
 
     if (!title || !text) {
