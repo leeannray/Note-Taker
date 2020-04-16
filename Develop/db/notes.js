@@ -59,5 +59,5 @@ class NotesData {
   }
 };
 
-module.exports = new NotesData
+module.export = new NotesData
 
