@@ -18,8 +18,8 @@
     <a class="navbar-brand" href="/index.html">NOTED
     </a>
     <div class="icons">
-      <i class="fas fa-save text-dark save-note"></i>
-      <i class="fas fa-pen-fancy text-dark new-note"></i>
+      <i id="save" class="fa text-dark save-note"></i>
+      <i id="new" class="fas fa-pen-fancy text-dark new-note"></i>
     </div>
   </nav>
   <div class="container-fluid">
@@ -39,6 +39,24 @@
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="/assets/js/index.js"></script>
+<script>
+  function hand() {
+    var a;
+    a = document.getElementById("save");
+    a.innerHTML = "&#xf25a;";
+    setTimeout(function () {
+      a.innerHTML = "&#xf256;";
+    }, 500);
+    setTimeout(function () {
+      a.innerHTML = "&#xf259;";
+    }, 1000);
+    setTimeout(function () {
+      a.innerHTML = "&#xf256;";
+    }, 1500);
+  }
+  hand();
+  setInterval(hand, 2000);
+</script>
 </body>
 
 </html>

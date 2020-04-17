@@ -35,6 +35,7 @@ class NotesData {
     });
   }
 
+  // note to object. If no title or text then throw error
   addNote(note) {
     const { title, text } = note;
 
@@ -60,7 +61,7 @@ class NotesData {
   }
 }
 
-
+// calls NotesData constructor
 
 module.exports = new NotesData()
 
