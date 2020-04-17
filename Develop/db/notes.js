@@ -52,7 +52,7 @@ class NotesData {
       .then(updatedNotes => this.write(updatedNotes))
       .then(() => newNote);
   }
-
+                                    
   deleteNote(id) {
     // Get all notes, remove note with given id, write filtered notes
     return this.getNotes()
