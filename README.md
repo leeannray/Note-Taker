@@ -43,5 +43,17 @@ Application should allow users to view previously saved notes.
 Application should allow users to delete previously saved notes.
 
 - - -
+<img src="./Develop/public/assets/img/Note_Taker/Develop/public/assets/img/Screen%20Shot%202020-04-16%20at%205.42.13%20PM.png" alt="screenshot">
 
+<img src="./Develop/public/assets/img/Note_Taker/Develop/public/assets/img/Screen%20Shot%202020-04-16%20at%205.42.31%20PM.png" alt="screenshot">
+
+<img src="./Develop/public/assets/img/Note_Taker/Develop/public/assets/img/Screen%20Shot%202020-04-16%20at%205.42.51%20PM.png" alt="screenshot">
+
+<video width="100%" height="auto" controls>
+  <source src="./Develop/public/assets/img/giphynotetaker.gif" type="video/gif">
+</video>
+
+<video width="100%" height="auto" controls>
+<source src="./Develop/public/assets/img/GIPHYNOTETAKERFINAL.mp4" type="video/mp4">
+</video>
 
