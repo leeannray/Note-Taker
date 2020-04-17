@@ -1,6 +1,7 @@
 const util = require("util");
 const fs = require("fs");
 
+
 // This package will be used to generate our unique ids. https://www.npmjs.com/package/uuid
 
 
@@ -44,7 +45,7 @@ class NotesData {
     }
 
     // Add unique id to note using uuid package
-    const newNote = { title, text, id: ++this.lastId };
+    const newNote = { title, text, id: Date.now() };
 
     // Get all notes, add new note, write all updated notes, return the newNote (spread array)
     return this.getNotes()

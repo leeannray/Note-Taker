@@ -3,7 +3,7 @@ const data = require("../db/notes");
 const router = require("express").Router();
 
 
-// GET "/api/notes" responds with all notes from the database
+// GET "/api/notes" responds with all notes from the database. 500 = server cannot process request for some unknown reason
 router.get("/notes", (req, res) => {
   data
     .getNotes()
