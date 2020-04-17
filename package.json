@@ -1,0 +1,25 @@
+{
+  "name": "note_taker",
+  "version": "1.0.0",
+  "description": "## Description",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "util": "^0.12.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leenorman/Note_Taker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leenorman/Note_Taker/issues"
+  },
+  "homepage": "https://github.com/leenorman/Note_Taker#readme"
+}
