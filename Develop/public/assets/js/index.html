@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Note Taker</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/sketchy/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-2kOE+STGAkgemIkUbGtoZ8dJLqfvJ/xzRnimSkQN7viOfwRvWseF7lqcuNXmjwrL" crossorigin="anonymous">
+    <link href="../public/assets/css/styles.css" rel="stylesheet">
+    <style>
+      .hide {
+        display: none;
+      }
+
+      .mt-4:hover+.hide {
+        display: block;
+        color: red;
+      }
+    </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/index">NOTED
+    </a>
+  </nav>
+  <div class="container">
+    <div style="margin-top: 80px;" class="jumbotron text-center">
+      <h1 class="display-4">JOT DOWN YOUR NOTES <span role="img" aria-label="Memo"> 📝</span></h1>
+      <h4 class="mt-4">Organize your thoughts, to-dos, tasks, or random notes!</h4>
+      <div class="hide">Don't overwhelm yourself!</div>
+      <a class="btn btn-outline-primary btn-lg mt-4" href="/notes" role="button">START SCRIBBLING</a>
+      <br>
+      <a class="btn btn-outline-primary btn-lg mt-4" href="/notes" role="button">SEE MY NOTES</a>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/assets/js/index.js"></script>
+</body>
+
+</html>
