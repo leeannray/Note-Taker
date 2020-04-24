@@ -9,7 +9,16 @@
   <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/sketchy/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-2kOE+STGAkgemIkUbGtoZ8dJLqfvJ/xzRnimSkQN7viOfwRvWseF7lqcuNXmjwrL" crossorigin="anonymous">
     <link href="../public/assets/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <style>
+      div,
+      input,
+      p,
+      textarea,
+      nav,
+      a {
+        font-family: 'Bangers', cursive;
+      };
       .hide {
         display: none;
       }
@@ -17,19 +26,20 @@
       .mt-4:hover+.hide {
         display: block;
         color: red;
-      }
+      };
     </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/index">NOTED
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-family: 'Bangers' , cursive;">
+    <a class="navbar-brand" href="/index" style="font-family: 'Bangers' , cursive;">NOTED
     </a>
   </nav>
   <div class="container">
     <div style="margin-top: 80px;" class="jumbotron text-center">
-      <h1 class="display-4">JOT DOWN YOUR NOTES <span role="img" aria-label="Memo"> 📝</span></h1>
-      <h4 class="mt-4">Organize your thoughts, to-dos, tasks, or random notes!</h4>
+      <h1 class="display-4" style="font-family: 'Bangers', cursive">JOT DOWN YOUR NOTES <span role="img"
+          aria-label="Memo"> 📝</span></h1>
+      <h4 class="mt-4" style="font-family: 'Bangers' , cursive;">Organize your thoughts, to-dos, tasks, or random notes!</h4>
       <div class="hide">Don't overwhelm yourself!</div>
       <a class="btn btn-outline-primary btn-lg mt-4" href="/notes" role="button">START SCRIBBLING</a>
       <br>
