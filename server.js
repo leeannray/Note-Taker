@@ -12,8 +12,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-require("./routes/htmlRoutes.js")(app);
-require("./routes/apiRoutes.js")(app);
+const htmlRoutes = require("./routes/htmlRoutes.js");
+const apiRoutes = require("./routes/apiRoutes.js");
+
+app.use(htmlRoutes);
+app.use(apiRoutes);
 
 // Start the server on the port
 app.listen(PORT, () => console.log(`Listening on PORT: ${PORT}`));
