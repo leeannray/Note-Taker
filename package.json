@@ -6,7 +6,9 @@
   "dependencies": {
     "express": "^4.17.1",
     "fs": "^0.0.1-security",
-    "util": "^0.12.2"
+    "path": "^0.12.7",
+    "util": "^0.12.3",
+    "uuid": "^8.0.0"
   },
   "devDependencies": {},
   "scripts": {
